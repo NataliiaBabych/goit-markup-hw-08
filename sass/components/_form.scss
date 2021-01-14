@@ -1,0 +1,68 @@
+/* Форма для подписки */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.form-sign {
+  display: flex;
+  align-content: center;
+  padding-top: 20px;
+}
+
+.sign-title {
+  display: block;
+  font-family: $primary-font;
+
+  @include text-style($background-color-white, 700, 14px, 0.03em, 1.14, left);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.form-sign input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: $background-color-white;
+}
+
+.send {
+  position: relative;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: auto;
+  width: 200px;
+  height: 50px;
+
+  margin-left: 12px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  text-decoration: none;
+  background-color: $hover-color;
+  @include text-style($background-color-white, 700, 16px, 0.06em, 1.87, center);
+}
+
+.send::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 148px;
+  right: 28px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../images/icon-send.svg);
+}

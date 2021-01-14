@@ -1,0 +1,90 @@
+/* Carts */
+.portfolio-link {
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.portfolio-preview > .item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.portfolio-preview > .item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-preview > .item {
+  width: 370px;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link:hover .portfolio-above,
+.portfolio-link:focus .portfolio-above {
+  transform: translateY(0);
+}
+
+.portfolio-content {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio-img {
+  display: block;
+}
+.portfolio-preview a {
+  text-decoration: none;
+}
+.portfolio-preview h2 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  @include text-style($title-text-color, 700, 18px, 0.06em, 2, none);
+}
+
+.portfolio-preview p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  @include text-style($main-text-color, 400, 16px, 0.03em, 1.87, left);
+}
+
+a .portfolio-img-text {
+  position: relative;
+  overflow: hidden;
+  min-width: 370px;
+  height: 294px;
+}
+
+.portfolio-img-text .portfolio-above {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+
+  font-family: $primary-font;
+  @include text-style(
+    $background-color-white,
+    normal,
+    18px,
+    0.03em,
+    1.56,
+    left
+  );
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}

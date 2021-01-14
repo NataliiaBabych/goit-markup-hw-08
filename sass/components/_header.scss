@@ -1,0 +1,217 @@
+/* header */
+// Mobile
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: $logo-font;
+  @include text-style($hover-color, 700, 26px, 0.03em, 1.19, left);
+}
+
+.logo-part {
+  color: #000000;
+}
+.logo-part-footer {
+  color: $background-color-white;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $background-color-white;
+  align-items: center;
+}
+
+.nav-button .icon-cross {
+  display: none;
+}
+
+.nav-button.is-open .icon-cross {
+  display: block;
+}
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 393px;
+  background-color: $background-color-white;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.list-nav {
+  margin-top: 60px;
+  margin-right: 190px;
+  margin-left: 190px;
+  margin-bottom: 60px;
+}
+
+.list-nav .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.list-nav a {
+  position: relative;
+
+  @include text-style($title-text-color, 500, 18px, 2%, 1.16, center);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-nav .current {
+  color: $hover-color;
+}
+.list-nav .current::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 45px;
+  width: 48px;
+  height: 4px;
+  background: $hover-color;
+  border-radius: 2px;
+}
+.list-nav .port::after {
+  width: 78px;
+}
+.address-header a {
+  @extend %flex-center;
+  align-items: center;
+
+  text-decoration: none;
+  font-style: normal;
+  @include text-style($main-text-color, 500, 14px, 0.02em, 1.14, left);
+}
+.address-header .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+// Desktop
+
+// .header {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+// }
+// .logo {
+//   text-decoration: none;
+//   font-family: $logo-font;
+//   @include text-style($hover-color, 700, 26px, 0.03em, 1.19, left);
+// }
+
+// .logo-part {
+//   color: #000000;
+// }
+// .logo-part-footer {
+//   color: $background-color-white;
+// }
+
+// .header-nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .list-nav {
+//   display: flex;
+//   margin-left: 93px;
+// }
+// .list-nav .item {
+//   display: inline-block;
+//   padding-top: 7px;
+//   padding-bottom: 7px;
+// }
+// .list-nav .item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .address-header {
+//   display: flex;
+//   margin-left: auto;
+// }
+// .address-header .item {
+//   display: inline-block;
+//   padding-top: 7px;
+//   padding-bottom: 7px;
+// }
+// .address-header .item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .list-nav a {
+//   position: relative;
+//   text-decoration: none;
+
+//   @include text-style($title-text-color, 500, 14px, 0.02em, 1.14, left);
+
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .list-nav .current {
+//   color: $hover-color;
+// }
+// .list-nav .current::after {
+//   content: "";
+//   display: flex;
+//   position: absolute;
+//   top: 45px;
+//   width: 48px;
+//   height: 4px;
+//   background: $hover-color;
+//   border-radius: 2px;
+// }
+// .list-nav .port::after {
+//   width: 78px;
+// }
+// .address-header a {
+//   @extend %flex-center;
+//   align-items: center;
+
+//   text-decoration: none;
+//   font-style: normal;
+//   @include text-style($main-text-color, 500, 14px, 0.02em, 1.14, left);
+
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .header-icon {
+//   margin-right: 10px;
+// }
+
+// .list-nav a:hover,
+// .address-header a:hover,
+// .list-nav a:focus,
+// .address-header a:focus {
+//   color: $hover-color;
+// }
