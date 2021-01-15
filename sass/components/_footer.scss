@@ -1,15 +1,20 @@
 /* footer */
+// Mobile
 footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+footer .logo {
+  display: block;
+  text-align: center;
+}
 .footer-list {
   margin-top: 20px;
 }
 .footer-address > .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-address p {
@@ -22,6 +27,7 @@ footer {
   background-color: #2f303a;
 }
 .footer-address a {
+  display: block;
   @include text-style(
     rgba(255, 255, 255, 0.6),
     400,
@@ -34,18 +40,15 @@ footer {
   background-color: #2f303a;
   font-style: normal;
 }
-footer > div {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-links {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 .footer-links-title {
   margin-top: 0;
   margin-bottom: 0;
 
-  @include text-style($background-color-white, 700, 14px, 0.03em, 1.71, left);
+  @include text-style($background-color-white, 700, 14px, 0.03em, 1.71, center);
   text-decoration: none;
   font-style: normal;
   background-color: #2f303a;
@@ -63,3 +66,70 @@ footer > div {
   fill: $background-color-white;
   margin: 12px;
 }
+
+// Desktop
+
+// footer {
+//   background-color: #2f303a;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+
+// .footer-list {
+//   margin-top: 20px;
+// }
+// .footer-address > .item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+
+// .footer-address p {
+//   margin-top: 0;
+//   margin-bottom: 0;
+
+//   @include text-style($background-color-white, 400, 14px, 0.03em, 1.71, center);
+//   text-decoration: none;
+//   font-style: normal;
+//   background-color: #2f303a;
+// }
+// .footer-address a {
+//   @include text-style(
+//     rgba(255, 255, 255, 0.6),
+//     400,
+//     14px,
+//     0.03em,
+//     1.71,
+//     center
+//   );
+//   text-decoration: none;
+//   background-color: #2f303a;
+//   font-style: normal;
+// }
+// footer > div {
+//   display: flex;
+//   align-items: baseline;
+// }
+// .footer-links {
+//   margin-left: 70px;
+// }
+// .footer-links-title {
+//   margin-top: 0;
+//   margin-bottom: 0;
+
+//   @include text-style($background-color-white, 700, 14px, 0.03em, 1.71, left);
+//   text-decoration: none;
+//   font-style: normal;
+//   background-color: #2f303a;
+// }
+
+// .footer-links > .links-list {
+//   margin-top: 20px;
+// }
+// .footer-links a {
+//   background-color: rgba(255, 255, 255, 0.1);
+// }
+
+// .join-links {
+//   display: inline-block;
+//   fill: $background-color-white;
+//   margin: 12px;
+// }
