@@ -21,9 +21,12 @@
   text-transform: uppercase;
 }
 .form-sign input {
-  width: 100%;
+  display: block;
+  width: 450px;
   height: 50px;
   padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -70,72 +73,30 @@
   background-image: url(../images/icon-send.svg);
 }
 
+// // Tablet
+// @media screen and (min-width: 768px) {
+// }
+
 // Desktop
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+    margin-top: 0px;
+  }
 
-// .footer-form {
-//   display: flex;
-//   flex-direction: column;
-//   margin-left: 93px;
-// }
-// .form-sign {
-//   display: flex;
-//   align-content: center;
-//   padding-top: 20px;
-// }
+  .form-sign {
+    flex-direction: row;
+  }
+  .sign-title {
+    text-align: left;
+  }
+  .form-sign input {
+    width: 358px;
+  }
 
-// .sign-title {
-//   display: block;
-//   font-family: $primary-font;
-
-//   @include text-style($background-color-white, 700, 14px, 0.03em, 1.14, left);
-//   font-style: normal;
-//   text-transform: uppercase;
-// }
-
-// .form-sign input {
-//   width: 358px;
-//   height: 50px;
-//   padding: 15px;
-
-//   background-color: #2f303a;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   box-sizing: border-box;
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
-
-//   color: $background-color-white;
-// }
-
-// .send {
-//   position: relative;
-//   display: flex;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-left: 28px;
-//   padding-right: auto;
-//   width: 200px;
-//   height: 50px;
-
-//   margin-left: 12px;
-
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-
-//   text-decoration: none;
-//   background-color: $hover-color;
-//   @include text-style($background-color-white, 700, 16px, 0.06em, 1.87, center);
-// }
-
-// .send::after {
-//   content: "";
-//   position: absolute;
-//   top: 13px;
-//   left: 148px;
-//   right: 28px;
-
-//   display: block;
-//   width: 24px;
-//   height: 24px;
-
-//   background-image: url(../images/icon-send.svg);
-// }
+  .send {
+    margin-left: 12px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}

@@ -5,46 +5,49 @@
 }
 
 // Desktop
-// .about {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-// .about-title {
-//   margin-top: 0px;
-//   margin-bottom: 50px;
-//   @include text-style($title-text-color, 700, 36px, 0.03em, 1.17, center);
-// }
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .about-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    @include text-style($title-text-color, 700, 36px, 0.03em, 1.17, center);
+  }
 
-// .about-list {
-//   display: flex;
-// }
-// .about-list .item {
-//   position: relative;
-// }
+  .about-list {
+    display: flex;
+  }
+  .about-list .item {
+    position: relative;
+  }
 
-// .about-list > .item:not(:last-child) {
-//   margin-right: 30px;
-// }
-// .about-above {
-//   position: absolute;
-//   bottom: 0px;
+  .about-list > .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .about-above {
+    position: absolute;
+    bottom: 0px;
 
-//   width: 370px;
-//   height: 70px;
-//   margin: 0;
-//   padding-top: 27px;
-//   padding-bottom: 27px;
+    width: 370px;
+    height: 70px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
 
-//   font-family: $primary-font;
+    font-family: $primary-font;
 
-//   @include text-style(
-//     $background-color-white,
-//     bold,
-//     14px,
-//     0.03em,
-//     1.14,
-//     center
-//   );
-//   text-transform: uppercase;
-//   background-color: rgba(47, 48, 58, 0.8);
-// }
+    @include text-style(
+      $background-color-white,
+      bold,
+      14px,
+      0.03em,
+      1.14,
+      center
+    );
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
