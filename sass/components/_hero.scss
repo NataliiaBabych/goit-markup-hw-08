@@ -8,7 +8,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero.jpg);
+    url(../images/mobile/hero480.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   max-width: 480px;
   height: 400px;
@@ -21,6 +21,12 @@
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile/hero480@2x.jpg);
+  }
+}
+
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -44,16 +50,26 @@
 // Tablet
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: url(../images/tablet/hero768.jpg);
     max-width: 768px;
+  }
+  @media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet/hero768@2x.jpg);
   }
 }
 
 // Desktop
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: url(../images/desktop/hero1600.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  @media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/hero1600@2x.jpg);
   }
 }

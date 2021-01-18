@@ -215,15 +215,13 @@ img {
   }
   .mobile-nav {
     position: relative;
+    display: flex;
+    align-items: center;
     height: auto;
     z-index: 0;
     top: 0;
     left: 0;
     width: auto;
-  }
-  .mobile-nav.is-open {
-    display: flex;
-    align-items: center;
   }
   .list-nav {
     display: flex;
@@ -315,7 +313,7 @@ img {
 
 /* hero */
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero480.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   max-width: 480px;
   height: 400px;
@@ -327,6 +325,12 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile/hero480@2x.jpg);
+  }
 }
 
 .hero-title {

@@ -141,16 +141,15 @@
 
   .mobile-nav {
     position: relative;
+    display: flex;
+    align-items: center;
     height: auto;
     z-index: 0;
     top: 0;
     left: 0;
     width: auto;
   }
-  .mobile-nav.is-open {
-    display: flex;
-    align-items: center;
-  }
+
   .list-nav {
     display: flex;
     margin-top: 0px;

@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container header-nav">
             <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-            <div class="mobile-nav is-open" data-menu>
+            <div class="mobile-nav" data-menu>
                 <nav class="main-nav">
                     <ul class="list-nav list">
                         <li class="item"><a href="./index.html" class="current">Студия</a></li>
@@ -39,7 +39,7 @@
                     </ul>
                 </address>
             </div>
-        <button   class="nav-button is-open" data-menu-button>
+        <button   class="nav-button" data-menu-button>
             <svg  width="24px" height="16px"  fill="currentColor">
             <use class="icon-menu"  href="./images/symbol-defs.svg#icon-menu_24px">
             </use>
@@ -112,19 +112,26 @@
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class=" about-list list">
             <li class="item">
-                <img src="images/keyboard.png" alt="Клавиатура" width="370">
+                <img srcset="./images/desktop/about-box1-370.jpg 1x, 
+                ./images/desktop/about-box1-370.jpg 2x"
+                src="./images/desktop/about-box1-370.jpg" 
+                alt="Клавиатура" width="370">
                 <p class="about-above">
                 десктопные приложения
                 </p>
             </li>
             <li class="item">
-                <img src="images/laptop.png" alt="Ноутбук" width="370">
+                <img srcset="./images/desktop/about-box2-370.jpg 1x, 
+                ./images/desktop/about-box2-370.jpg 2x"
+                src="./images/desktop/about-box2-370.jpg" alt="Ноутбук" width="370">
                 <p class="about-above">
                 мобильные приложения
                 </p>
             </li>
             <li class="item">
-                <img src="images/table.png" alt="Планшет" width="370">
+                <img srcset="./images/desktop/about-box3-370.jpg 1x, 
+                ./images/desktop/about-box3-370.jpg 2x"
+                src="./images/desktop/about-box3-370.jpg" alt="Планшет" width="370">
                 <p class="about-above">
                 дизайнерские решения
                 </p>
@@ -138,7 +145,12 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
             <li class="item">
-        <img src="images/igor.jpg" alt="фото Игоря Демьяненко" width="450">    
+        <picture>
+            <source srcset="./images/mobile/team1-450.jpg 1x, ./images/mobile/team1-450@2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/desktop/team1-270.jpg 1x, ./images/desktop/team1-270@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./images/tablet/team1-354.jpg 1x, ./images/tablet/team1-354@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="./images/tablet/team1-354.jpg" alt="фото Игоря Демьяненко">
+        </picture>    
         <div class="item-name">
         <h3>Игорь Демьяненко</h3>
         <p>Product Designer</p>
@@ -179,7 +191,12 @@
         </div> 
             </li>
             <li class="item">
-        <img src="images/olga.jpg" alt="Фото Ольги Репиной" width="450">
+                <picture>
+                    <source srcset="./images/mobile/team2-450.jpg 1x, ./images/mobile/team2-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/desktop/team2-270.jpg 1x, ./images/desktop/team2-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/team2-354.jpg 1x, ./images/tablet/team2-354@2x.jpg 2x" media="(min-width: 768px)">
+                <img src="images/tablet/team2-354.jpg" alt="Фото Ольги Репиной">
+                    </picture>
         <div class="item-name">
         <h3>Ольга Репина</h3>
         <p>Frontend Developer</p>
@@ -220,7 +237,13 @@
         </div>
             </li>
             <li class="item">
-        <img src="images/nikolay.jpg" alt="Фото Николая Тарасова" width="450">    
+                <picture>
+                    <source srcset="./images/mobile/team3-450.jpg 1x, ./images/mobile/team3-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/desktop/team3-270.jpg 1x, ./images/desktop/team3-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/team3-354.jpg 1x, ./images/tablet/team3-354@2x.jpg 2x" media="(min-width: 768px)">
+                <img src="images/tablet/team3-354.jpg" alt="Фото Николая Тарасова">
+                </picture>
+            
         <div class="item-name">
         <h3>Николай Тарасов</h3>
         <p>Marketing</p>
@@ -261,7 +284,12 @@
         </div>
             </li>
             <li class="item">
-        <img src="images/mikhail.jpg" alt="Фото Михаила Ермакова" width="450">    
+                <picture>
+                    <source srcset="./images/mobile/team4-450.jpg 1x, ./images/mobile/team4-450@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/desktop/team4-270.jpg 1x, ./images/desktop/team4-270@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/team4-354.jpg 1x, ./images/tablet/team4-354@2x.jpg 2x" media="(min-width: 768px)">
+                </picture>
+        <img src="images/tablet/team4-354.jpg" alt="Фото Михаила Ермакова">    
         <div class="item-name">
         <h3>Михаил Ермаков</h3>
         <p>UI Designer</p>
