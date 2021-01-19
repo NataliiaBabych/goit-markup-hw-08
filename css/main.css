@@ -33,7 +33,7 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
     margin-left: auto;
@@ -360,18 +360,32 @@ img {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    background-image: url(../images/tablet/hero768.jpg);
     max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet/hero768@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: url(../images/desktop/hero1600.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/hero1600@2x.jpg);
   }
 }
 
@@ -1183,6 +1197,7 @@ textarea {
   }
   .sign-title {
     text-align: left;
+    padding-top: 10px;
   }
   .form-sign input {
     width: 358px;

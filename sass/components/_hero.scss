@@ -48,14 +48,15 @@
 }
 
 // Tablet
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: url(../images/tablet/hero768.jpg);
     max-width: 768px;
   }
   @media (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/tablet/hero768@2x.jpg);
+    .hero {
+      background-image: url(../images/tablet/hero768@2x.jpg);
+    }
   }
 }
 
@@ -69,7 +70,8 @@
     padding-bottom: 200px;
   }
   @media (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/desktop/hero1600@2x.jpg);
+    .hero {
+      background-image: url(../images/desktop/hero1600@2x.jpg);
+    }
   }
 }
