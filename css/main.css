@@ -198,6 +198,10 @@ img {
   margin-bottom: 16px;
 }
 
+.header-icon {
+  margin-right: 10px;
+}
+
 .list-nav a:hover,
 .address-header a:hover,
 .list-nav a:focus,
@@ -315,7 +319,7 @@ img {
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero480.jpg);
   background-color: rgba(47, 48, 58, 0.4);
-  max-width: 480px;
+  min-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -363,7 +367,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: url(../images/tablet/hero768.jpg);
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 
@@ -380,6 +384,10 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -427,6 +435,7 @@ img {
   letter-spacing: 0.03em;
   line-height: 1.14;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .features-icon {
@@ -860,6 +869,9 @@ footer .logo {
     margin-left: 70px;
     margin-top: 0px;
   }
+  .footer-links-title {
+    text-align: left;
+  }
 }
 
 /* Модальное окно */
@@ -1259,9 +1271,6 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio {
-    background-color: #e5e5e5;
-  }
   .button-list {
     display: flex;
     justify-content: center;

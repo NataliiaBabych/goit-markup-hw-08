@@ -24,6 +24,7 @@
   margin-bottom: 10px;
 
   @include text-style($title-text-color, 700, 14px, 0.03em, 1.14, center);
+  text-transform: uppercase;
 }
 
 .features-icon {
