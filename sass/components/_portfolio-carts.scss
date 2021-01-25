@@ -16,7 +16,7 @@
 }
 
 .portfolio-preview > .item {
-  width: 450px;
+  max-width: 450px;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -57,7 +57,7 @@
 a .portfolio-img-text {
   position: relative;
   overflow: hidden;
-  min-width: 450px;
+  max-width: 450px;
   height: 294px;
 }
 
@@ -66,7 +66,7 @@ a .portfolio-img-text {
   z-index: 0.9;
   top: 0;
 
-  width: 450px;
+  max-width: 450px;
   height: 294px;
   padding: 77px 24px;
 

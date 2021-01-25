@@ -26,7 +26,12 @@
     background-image: url(../images/mobile/hero480@2x.jpg);
   }
 }
-
+@media screen and (max-width: 479px) {
+  .hero {
+    max-width: 480px;
+    min-width: 100px;
+  }
+}
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;

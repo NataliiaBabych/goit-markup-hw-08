@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .features-list .item {
-  width: 450px;
+  max-width: 450px;
 }
 .features-list > .item:not(:last-child) {
   margin-bottom: 30px;
@@ -36,7 +36,7 @@
   @extend %flex-center;
   align-items: center;
 
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
