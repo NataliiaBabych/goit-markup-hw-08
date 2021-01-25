@@ -919,7 +919,7 @@ footer .logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
+  width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #ffffff;
@@ -983,7 +983,7 @@ footer .logo {
   position: relative;
   display: block;
   padding-left: 42px;
-  max-width: 370px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1009,7 +1009,7 @@ footer .logo {
 }
 
 textarea {
-  max-width: 370px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1129,6 +1129,18 @@ textarea {
 .submit-button:hover,
 .submit-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 450px;
+  }
+  textarea {
+    max-width: 370px;
+  }
+  .form-input {
+    max-width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
