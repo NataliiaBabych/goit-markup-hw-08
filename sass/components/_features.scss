@@ -11,6 +11,8 @@
 }
 .features-list .item {
   max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .features-list > .item:not(:last-child) {
   margin-bottom: 30px;
